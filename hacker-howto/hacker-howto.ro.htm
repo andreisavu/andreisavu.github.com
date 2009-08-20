@@ -1,0 +1,1029 @@
+<!-- <BASE HREF="http://garaj.xhost.ro/work/cum_sa_devii_un_hacker.htm"> -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META HTTP-EQUIV=CONTENT-TYPE CONTENT="TEXT/HTML; CHARSET=ISO-8859-2"> 
+<title>Cum sã devii un hacker</title>
+<link rel="stylesheet" href="hacker-howto.css" type="text/css" />
+<meta name="generator" content="DocBook XSL Stylesheets V1.68.1" />
+</head>
+<body>
+
+<div class="article" lang="ro" xml:lang="ro"><div class="titlepage"><div><div>
+<h2 class="title"><a id="id184942"></a>Cum sã devii un hacker</h2></div><div>
+<div class="author"><h3 class="author"><span class="firstname">Eric</span> 
+<span class="othername">Steven</span> <span class="surname">Raymond</span></h3>
+<div class="affiliation"><span class="orgname"><a href="http://catb.org/~esr/" target="_top">
+    Thyrsus Enterprises</a><br /></span><div class="address"><p><br />
+<code class="email">&lt;<a href="mailto:esr@thyrsus.com">esr@thyrsus.com</a>&gt;</code><br />
+</p></div></div></div></div><div>
+<p class="copyright">Copyright (c) 2001 Eric S. Raymond
+<i>
+<br /><br />Versiunea originalã în englezã ( original english version ) :<br />
+<a href="http://www.catb.org/~esr/faqs/hacker-howto.html" target="_blank">http://www.catb.org/~esr/faqs/hacker-howto.html</a><br />
+</i>
+</p></div>
+
+<div><div class="revhistory"><table border="1" width="100%" summary="Istoric revizuiri"><tr>
+<th align="left" valign="top" colspan="3"><b>Istoric revizuiri</b></th></tr><tr>
+<td align="left">Revizuire 1.33</td><td align="left">29 Noiembrie 2005</td>
+<td align="left">esr</td></tr><tr><td align="left" colspan="3">
+         Adaugatã legãturã cãtre excelentul eseu al lui Peter Norvig
+      </td></tr><tr><td align="left">Revizuire 1.32</td><td align="left">29 Iunie 2005</td><td align="left">esr
+	  </td></tr><tr><td align="left" colspan="3">
+		 Material nou în legãturã cu necesitatea de a nu rezolva iar probleme care au mai fost rezolvate.
+         Un set întrebãri frecvente despre hacking ºi programarea open-source.
+         Trei întrebãri care sã iþi spunã dacã eºti deja un hacker.
+      </td></tr><tr><td align="left">Revizuire 1.31</td><td align="left">22 Martie 2005</td><td align="left">esr</td></tr><tr>
+	  <td align="left" colspan="3">
+		 Adãugatã o legaturã cãtre un alt eseu al lui Paul Graham, câteva sfaturi despre
+		 cum sã alegi primul proiect. Noi legãturi cãtre pagini cu traduceri.      
+      </td></tr><tr><td align="left">Revizuire 1.30</td><td align="left">2 Martie 2005</td><td align="left">esr</td>
+	  </tr><tr><td align="left" colspan="3">
+         Adaugate legãturi cãtre pagini cu traduceri.
+      </td></tr></table></div></div></div><hr /></div><div class="toc"><p>
+<b>Cuprins</b></p><dl><dt><span class="sect1">
+<a href="#why_this">De ce acest document?</a></span></dt><dt><span class="sect1">
+<a href="#what_is">Ce este un Hacker?</a></span></dt><dt><span class="sect1">
+<a href="#attitude">Atitudinea unui Hacker</a></span></dt><dd><dl><dt><span class="sect2">
+<a href="#believe1">1. Lumea este plinã de probleme fascinante care aºteaptã sã fie rezolvate.</a></span></dt><dt><span class="sect2">
+<a href="#believe2">2. Nici o problemã nu ar trebui sã fie rezolvatã de doua ori.</a></span></dt><dt><span class="sect2">
+<a href="#believe3">3. Evitã plictiseala ºi munca neinteresantã.</a></span></dt><dt><span class="sect2">
+<a href="#believe4">4. Libertatea este bunã.</a></span></dt><dt><span class="sect2">
+<a href="#believe5">5. Atitudinea nu substituie competenþele.</a></span></dt></dl></dd><dt><span class="sect1">
+<a href="#basic_skills">Cunoºtinþe esenþiale</a></span></dt><dd><dl><dt><span class="sect2">
+<a href="#skills1">1. Invatã sã programezi.</a></span></dt><dt><span class="sect2">
+<a href="#skills2">2. Instaleazã ºi foloseºte un sistem de operare din familia Unix.</a></span></dt><dt><span class="sect2">
+<a href="#skills3">3. Invatã sã foloseºti internetul ºi HTML.</a></span></dt><dt><span class="sect2">
+<a href="#skills4">4. Daca nu ºti englezã la un nivel acceptabil, învaþã.</a></span></dt></dl></dd><dt><span class="sect1">
+<a href="#status">Statutul în comunitatea hackerilor</a></span></dt><dd><dl><dt><span class="sect2">
+<a href="#respect1">1. Scrie programe cu surse deschise ( open-source )</a></span></dt><dt><span class="sect2">
+<a href="#respect2">2. Ajutã la testarea ºi îmbunãtãþirea programelor open-source</a></span></dt><dt><span class="sect2">
+<a href="#respect3">3. Publicã informaþii utile</a></span></dt><dt><span class="sect2">
+<a href="#respect4">4. Ajutã la menþinerea funcþionalã a infrastructurii</a></span></dt><dt><span class="sect2">
+<a href="#respect5">5. Ajutã comunitatea hackerilor</a></span></dt></dl></dd><dt><span class="sect1">
+<a href="#nerd_connection">Legãtura hacker/tocilar(nerd)</a></span></dt><dt><span class="sect1">
+<a href="#style">Puncte pentru stil</a></span></dt><dt><span class="sect1">
+<a href="#resources">Alte resurse</a></span></dt><dt><span class="sect1">
+<a href="#FAQ">Întrebãri frecvente</a></span></dt></dl></div><div class="mediaobject"><img src="glider.png" /></div>
+<div class="sect1" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a id="why_this"></a>De ce acest document?</h2></div></div></div>
+	  <p>Ca editor al <a href="http://www.catb.org/jargon" target="_top">dicþionarului
+de jargon </a> ºi autor al altor câteva documente similare foarte cunoscute primesc des mesaje de 
+la începãtori în reþele care întreabã "Cum pot sã învãþ sã fiu un hacker?". În 1996 am observat
+cã nu existã nici un fel de document care sã raspundã la aceastã întrebare, aºa cã am scris 
+acest document. Mulþi hackeri îl considera acum definitiv ºi presupun cã asta înseamnã cã este.
+Totuºi, eu nu sunt o autoritate exclusivã în acest domeniu; dacã nu iþi place eºti liber sã scri
+propria versiune.</p><p>Dacã citeºti un rezumat al acestui document versiunea completã o 
+gãseºti la <a href="http://garaj.xhost.ro/hacker-howto/hacker-howto.ro.htm" target="_top">
+http://garaj.xhost.ro/hacker-howto/hacker-howto.ro.htm</a>.</p><p> Notã: la sfârºitul acestui document 
+gãseºti o listã cu <a href="#FAQ" title="Intrebari frecvente">întrebãri frecvente</a>.
+Citeºte aceastã listã de douã ori înainte de a pune orice întrebare despre acest document.
+</p><p>Acest document mai existã în urmãtoarele traduceri :
+<a href="http://www.slashproc.net/doc/howto-ar.html" target="_top">Arabic</a>
+<a href="http://www.bgit.net/?id=9894" target="_top">Bulgarian</a>,
+<a href="http://arfues.net/traduccions/hacker-howto/hacker-howto.html" target="_top">Catalan</a>,
+<a href="http://www.angelfire.com/ok/leekawo/hackersim.htm" target="_top">Chinese (Simplified)</a>,
+<a href="http://www.olemichaelsen.dk/hacker-howto.html" target="_top">Danish</a>,
+<a href="http://www.knudde.be/index.php?page_name=hacker_howto" target="_top">Dutch</a>,
+<a href="http://htbh.persianblog.com" target="_top">Farsi</a>,
+<a href="http://hack.fi/hacker-howto-fi.php" target="_top">Finnish</a>,
+<a href="http://www.linuxtaskforce.de/hacker-howto-ger.html" target="_top">German</a>,
+<a href="http://www.rootshell.be/~eg/faqs/hacker-howto.heb.html" target="_top">Hebrew</a>,
+<a href="http://www.saltatempo.org/hacker/index_hacker.php" target="_top">Italian</a>
+<a href="http://webagora.idd.tamabi.ac.jp/wiki/index.php?cmd=read&amp;page=HowToBecomeAHacker" target="_top">Japanese</a>,
+<a href="http://stian.atlantiscrew.net/doc/hacker-howto.html" target="_top">Norwegian</a>,
+<a href="http://tpk.f2o.org/hacker-howto.html" target="_top">Polish</a>,
+<a href="http://jvdm.freeshell.org/pt/raquer-howto/" target="_top">Portuguese
+(Brazilian)</a>,
+<a href="http://www.sindominio.net/biblioweb/telematica/hacker-como.html" target="_top">Spanish</a>,
+<a href="http://www.belgeler.org/howto/hacker-howto/hacker-howto.html" target="_top">Turkish</a>,
+ºi <a href="http://www1.tripnet.se/~mly/open/faqs/hacker-howto.se.html" target="_top">Swedish</a>.
+Atenþie pentru cã acest document se schimbã frecvent ºi poate sã fie neactualizat. 
+</p><p>
+Imaginea cu cele cinci-puncte-în-nouã-pãtrate poartã numele de <span class="emphasis"><em>glider</em></span>.
+E un model simplu cu niºte proprietãþi foarte interesante într-o simulare matematicã numita :
+<a href="http://dmoz.org/Computers/Artificial_Life/Cellular_Automata/Conway%27s_Game_of_Life/" target="_top">Life</a>
+care a fascinat mulþi ani. Cred cã este o bunã emblemã care prezintã cum sunt hackerii : abstracþi, 
+misterioºi, ºi totuºi o poartã cãtre o lume cu o logicã aparte. Citeºte mai multe despre emblemã
+<a href="/~esr/hacker-emblem/" target="_top">aici </a>.</p>
+
+</div><div class="sect1" lang="ro" xml:lang="ro">
+<div class="titlepage"><div><div>
+<h2 class="title" style="clear: both"><a id="what_is"></a>Ce este un Hacker?</h2></div></div></div>
+<p><a href="http://www.catb.org/jargon" target="_top">Dicþionarul 
+de jargon</a> conþine mai multe definþii ale cuvantului hacker, cele mai multe fiind
+legate de obsesia pentru tehnicã ºi de dorinþa de a rezolva probleme ºi a depãºi limite.
+Dacã vrei sã ºti cum sã <span class="emphasis"><em>devii</em></span> un hacker doar douã 
+definiþii sunt relevante.
+</p><p>
+Existã o comunitate, o culturã, formatã din programatori experti ºi magicieni în ceea ce 
+priveºte reþelele care îºi are originea în primele experimente ARPAnet. Membrii acestei
+culturi au creat termenul de hacker. Hackerii au construit internetul. Hackerii fac sã
+funcþioneze Usenet. Hackerii menþin World Wide Web funcþional. Dacã faci parte din aceastã
+culturã, dacã ai contribuit ºi ceilalþi ºtiu cine eºti ºi te numesc hacker, atunci eºti un hacker.
+</p><p>Conceptul de hacker nu este limitat doar la tehnicã. Existã oameni care aplicã
+atitudinea unui hacker ºi în alte domenii cum ar fi electronica ºi muzica. Termenul poate
+fi asociat celui mai înalt nivel din orice ºtiinþã sau artã. Hackerii programatori recunosc
+aceste spirite înzestrate ºi în alte persoane. Unele persoane spun cã atitudinea unui hacker
+este independentã de domeniu. În continuarea acestui document o sã mã concentrez pe 
+deprinderile ºi atitudinea unui hacker programator, ºi pe tradiþia celor care au impus 
+denumirea de hacker.
+</p><p>
+Mai existã un grup de oameni care se autodeclarã hackeri, dar care nu sunt. Aceºti oameni
+( în special adolescenþi ) nu fac altceva decât sã atace calculatoare pe internet ºi 
+sã foloseascã ilegal sistemul telefonic. Hackerii adevãraþi numesc aceste persoane crackeri ºi
+nu vor sã aibã nici o legãturã cu ei. Majoritatea hackerilor adevaraþi cred cã crackerii sunt 
+leneºi, iresponsabili, ºi nu foarte inteligenþi, ºi simplu fapt de a fi capabil sã intri în 
+anumite calculatoare nu te face sã fi hacker la fel cum a fi capabil sã porneºti o maºinã farã
+chei nu te face un inginer auto. Din nefericire, mulþi jurnaliºti ºi scriitori au fost 
+pãcãliþi sã foloseascã cuvântul hacker pentru a descrie crackeri; acest lucru îi iritã
+pe hackerii adevãraþi.
+</p><p>
+Diferenþa esenþialã dintre un hacker ºi un cracker este urmãtoarea : hackerii construiesc 
+lucruri pe când crackerii nu fac altceva decât sã distrugã.
+</p><p>
+Dacã vrei sã devii un hacker continuã sã citeºti. Dacã tot ce vrei e sã fi un cracker 
+atunci citeºte grupul de ºtiri <a href="news:alt.2600" target="_top">alt.2600</a> ºi 
+pregãteºte-te sã faci cinci sau zece ani de închisoare dupã ce descoperi cã nu eºti 
+aºa inteligent cum crezi. ªi asta e tot ce voi spune despre crackeri.
+
+</p><div class="mediaobject"><img src="glider.png" /></div></div>
+<div class="sect1" lang="ro" xml:lang="ro"><div class="titlepage"><div><div>
+<h2 class="title" style="clear: both"><a id="attitude">
+</a>Atitudinea unui Hacker</h2></div></div></div><div class="toc"><dl><dt><span class="sect2">
+<a href="#believe1">1. Lumea este plinã de probleme fascinante care aºteaptã sã fie rezolvate.</a></span></dt><dt><span class="sect2">
+<a href="#believe2">2. Nici o problemã nu ar trebui sã fie rezolvatã de doua ori.</a></span></dt><dt><span class="sect2">
+<a href="#believe3">3. Evitã plictiseala ºi munca neinteresantã.</a></span></dt><dt><span class="sect2">
+<a href="#believe4">4. Libertatea este bunã.</a></span></dt><dt><span class="sect2">
+<a href="#believe5">5. Atitudinea nu substituie competenþele.</a></span></dt></dl></div>
+<p>
+Hackerii rezolva probleme ºi construiesc, ei cred în libertate ºi ajutorul reciproc 
+dezinteresat. Pentru a fi acceptat ca un hacker, trebuie sã te comporþi ca ºi cum ai avea
+aceastã atitudine. ªi pentru a te comporta astfel trebuie sã crezi cu adevãrat în aceste valori.
+</p><p>
+Dar dacã te gândeºti sã imiþi atitudinea de hacker doar pentru a fi acceptat în
+comunitate atunci ai inþeles greºit. E foarte important sã devii tipul de persoanã care 
+crede cã aceste lucruri sunt importante pentru cã te ajutã sã înveþi ºi sã rãmâi motivat.
+Ca toate celelalte arte care presupun creativitate, cel mai eficient mod de a deveni un
+maestru este imitarea acþiunilor unui maestru, nu doar intelectual ci ºi emoþional.
+</p><p> Sau, aºa cum afirmã acest poem Zen modern : </p><div class="literallayout"><p>
+<table cellspacing="20">
+<tr><td>
+Pentru a urma calea:<br />
+priveºte maestrul,<br />
+urmeazã maestrul,<br />
+mergi împreunã cu maestrul,<br />
+priveºte prin ochii maestrului,<br />
+fi tu maestrul.<br />
+</td><td>
+To follow the path:<br />
+look to the master,<br />
+follow the master,<br />
+walk with the master,<br />
+see through the master,<br />
+become the master.<br />
+</td></tr>
+</table>
+</p></div><p>
+Deci, pentru a deveni un hacker repetã urmãtoarele lucruri pânã când reuºeºti sã crezi în ele:
+</p><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="believe1"></a>1. Lumea este plinã de probleme fascinante care aºteaptã sã fie rezolvate.</h3></div></div></div>
+<p>
+A fi un hacker e foarte amuzant, un gen de amuzament care are nevoie de foarte mult efort.
+Efortul necesitã motivaþie. Atleþii de succes îºi menþim motivaþia din dorinþa de a-ºi împinge
+trupul cãtre obiective din ce în ce mai ridicate. Asemãnãtor, pentru a fi un hacker trebuie 
+sã te simþi motivat sã rezolvi probleme, sã îþi îmbunãtãþeºti aptitudinile, ºi sã îþi exerciþi
+inteligenþa.
+</p><p>
+Dacã nu eºti genul de persoanã care simte aceste lucruri natural, va trebui sã devii o astfel
+de persoanã pentru a deveni un hacker. Altfel, o sã descoperi cã energia pentru hacking e
+folositã în altfel de distracþii precum sex, bani ºi aprobare socialã. 
+</p><p>
+( Trebuie sã îþi dezvolþi ºi o încredere în propria capacitate de a învãþa lucruri noi, încrederea
+în faptul cã chiar dacã nu ºti tot ce e necesar pentru a rezolva o problema, dacã reuºeºti sã 
+întelegi o parte din ea ºi sã înveþi în continuare din acest punct vei ºti suficient pentru a 
+rezolva urmatoarea parte ºi tot aºa, pânã când termini. )
+</p></div><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="believe2"></a>2. Nici o problemã nu ar trebui rezolvatã de douã ori.</h3></div></div></div>
+<p>
+Creierele creative sunt o resursã limitatã. Nu ar trebui sã fie irosite reinventând roata 
+mai ales ºtiind cã sunt atâtea probleme interesante care aºteaptã sã fie rezolvate.
+</p><p>
+Pentru a te comporta ca un hacker, trebuie sã înþelegi cã timpul celorlalþi este la 
+fel de important ca ºi al tãu, astfel încat este o datorie moralã sã împarþi informaþiile, 
+sã rezolvi probleme a cãror soluþie sã o faci disponibilã oricui pentru ca ceilalþi hackeri
+sã rezolve noi probleme ºi sã nu fie nevoiþi sã rezolve probleme deja rezolvate.
+</p><p>
+Atenþie pentru cã "Nici o problemã nu ar trebui rezolvatã de douã ori" nu implicã faptul cã 
+toate solutiile existente trebuie sã fie considerate permanente, sau cã existã o singurã 
+soluþie pentru o anumitã problemã. Des învãþãm mult despre o problema pe care nu am ºtiut sã o
+rezolvãm studiind o primã rezolvare. Este  bine, ºi de multe ori chiar necesar, sã decidem
+cã putem sã rezolvam problema mai bine. Nu sunt benefice barierele artificiale impuse tehnic,
+legal sau instituþional ( programe cu sursã închisã ) care împiedicã refolosirea unei soluþii
+bune ºi forteazã oamenii sã reinventeze roata.
+</p><p>
+(Nu trebuie sã crezi ca eºti obligat sã dai toatã munca ta creativã, deºi hackerii care fac
+acest lucru sunt mai respectaþi. E compatibil cu valorile hackerilor sã vinzi destul astfel
+încât sã ai ce mânca, platii chiria ºi cumpãra calculatoare. Este acceptat sã îþi foloseþti
+deprinderile de hacker pentru a te îmbogatii, atâta timp cât nu uiþi de ceilalþi hackeri
+ºi de valorile de care discutam aici.)
+</p></div><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="believe3"></a>3. Evitã plictiseala ºi munca neinteresantã.</h3></div></div></div>
+<p>
+Hackerii ( ºi persoanele creative în general ) nu ar trebui sã fie niciodatã plictisiþi sau
+sã facã o muncã repetitivã ºi neinteresantã, pentru cã atunci când acest lucru se întâmplã
+nu mai pot sã rezolve probleme noi ºi interesante. Pierderea este dureroasã pentru toþi. Evitã
+plictiseala ºi orice formã de muncã neinteresantã.
+</p><p>
+Pentru a te comporta ca un hacker trebuie sã crezi în acest lucru suficient de mult încât
+sã încerci sã automatizezi orice fel de muncã plictisitoare, nu doar pentru tine ci ºi 
+pentru ceilalþi ( în special alþi hackeri ). 
+</p><p>
+(Nu existã nici o excepþie la acest lucru. Hackerii vor face câteodatã lucruri care par 
+repetitive ºi plictisitoare unui observator ca un exerciþiu de limpezire a gândurilor, 
+sau pentru a forma o nouã deprindere sau pentru o anumitã experienþã care nu poate fi 
+încercatã altfel. Dar aceasta este o alegere, nimeni care e capabil sã gândeascã nu ar trebui
+sã fie forþat sã facã o muncã plictisitoare.)
+</p></div><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="believe4"></a>4. Libertatea este bunã.</h3></div></div></div>
+<p>
+Hackerii sunt natural independenþi, nesupuºi autoritãþilor. Oricine poate sã îþi dea ordine
+poate sã te opreascã sã rezolvi o problemã de care eºti fascinat, ºi sigur va gãsi un motiv
+stupid pentru aceasta. Aºa cã atitudinea autoritarã trebuie sã fie respinsã în orice situaþie.
+</p><p>
+(Dar asta nu înseamnã cã trebuie sã luptãm împotriva tuturor autoritãþilor. Copii trebuie sã 
+fie ghidaþi ºi criminalii închiºi. Un hacker poate sã accepte o anumitã autoritate pentru a 
+obþine ceva, care este mai valoros decât timpul pe care îl pierde urmând ordinele. Dar 
+aceasta este o situaþie rar întâlnitã ºi acceptatã conºtient.)
+</p><p>
+Autoritãþile se dezvoltã bazându-se pe secrete ºi cenzurã. Acestea împiedicã schimbul
+liber ºi voluntar de informaþie, autoritãþile preferã cooperarea pe care o pot controla.
+Deci pentru a te comporta ca un hacker trebuie sã îþi dezvolþi o repulsie instinctivã faþã
+de cenzurã, secrete ºi uzul forþei. Trebuie sã ai puterea sã acþionezi conform acestei credinþe.
+</p></div><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="believe5"></a>5. Atitudinea nu substituie competenþele.</h3></div></div></div>
+<p>
+Pentru a fi un hacker trebuie sã îþi dezvolþi aceastã atitudine. Dar copierea unei atitudini
+nu te va face un hacker, aºa cum nu te va face un atlet sau o vedetã. Pentru a devenii un 
+hacker ai nevoie de inteligenþã, practicã, dedicare, ºi multã muncã.
+</p><p>
+Trebuie sã înveþi sã nu ai încredere în atitudine ºi sã respecþi competenþa de orice fel.
+Priceperea la lucruri dificile, pe care puþini le pot înþelege, care necesitã concentrare 
+ºi atenþie, este cu atât mai mult apreciatã.
+</p><p>
+Dacã respecþi competenþa, o sã îþi placã sã o dezvolþi în tine ºi munca dificilã va devenii
+un joc intens. Atitudinea este vitalã pentru a devenii un hacker.
+</p><div class="mediaobject"><img src="glider.png" /></div></div></div><div class="sect1" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a id="basic_skills"></a>Cunoºtinþe esenþiale</h2></div></div></div><div class="toc"><dl><dt><span class="sect2">
+<a href="#skills1">1. Învaþã sã programezi.</a></span></dt><dt><span class="sect2">
+<a href="#skills2">2. Instaleazã ºi foloseºte un sistem din familia Unix.</a></span></dt><dt><span class="sect2">
+<a href="#skills3">3. Învaþã sã foloseºti internetul ºi HTML.</a></span></dt><dt><span class="sect2">
+<a href="#skills4">4. Dacã nu ºti englezã la un nivel acceptabil, învaþã.</a></span></dt></dl></div>
+<p>
+Atitudinea este foarte importantã dar cunoºtinþele sunt ºi mai importante. Atitudinea nu
+substituie cunoºtinþele, ºi existã un set de deprinderi pe care trebuie sã le ai înainte ca
+cineva sã se gândeascã sã te numeascã hacker.
+</p><p>
+Acest set de deprinderi se schimbã lent pe masurã ce trece timpul ºi tehnologia creeazã 
+cunoºtinþe noi ºi le face pe cele vechi insuficiente. De exemplu iniþial includea necesitatea
+de a ºti sã programezi în limbaj de asamblare, ºi doar recent a fost introdus ºi HTML. 
+Dar acum include urmãtoarele deprinderi : 
+</p><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="skills1"></a>1. Învatã sã programezi.</h3></div></div></div>
+<p>
+Acest lucru este esenþial. Daca nu ºti sã programezi în nici un limbaj îþi recomand sã
+începi cu Python. E foarte bine gândit, bine documentat, ºi destul de blând cu începãtorii.
+Lãsând la o parte faptul cã e un limbaj bun pentru începãtori, Python nu este o jucãrie, 
+este un limbaj foarte puternic ºi flexibil ºi care se preteazã a fi folosit la proiecte mari.
+Am scris o evaluare mai detaliatã <a href="http://www.linuxjournal.com/article.php?sid=3882" target="_top">aici</a>.
+Niºte <a href="http://www.python.org/doc/Intros.html" target="_top">tutoriale</a> foarte bune
+sunt disponibile pe pagina web <a href="http://www.python.org" target="_top">www.python.org</a>
+</p><p>
+Java este un alt limbaj bun pentru a învãþa sã programezi în el. Este ceva mai dificil decât
+Python dar produce un cod mai rapid. Este un limbaj care e foarte bine sã fie ºtiut. Din 
+nefericire însã implementarea oficialã Sun este încã proprietarã. Aceasta nu este o prea mare
+problemã în ceea ce priveºte limbajul în sine pentru cã existã alternative open-source de 
+foarte bunã calitate; problema realã este datã de bibliotecile de funcþii care sunt disponibile
+împreunã cu limbajul. Implementãrile open-source sunt încã în spatele celor oficiale oferite
+de Sun. Aºa cã dacã vrei sã înveþi Java foloseºte o implementare open-source pentru a evita
+sã devii dependent de codul proprietate Sun.
+</p><p>
+Dar trebuie sã fi conºtient cã nu o sã ajungi un hacker, nici mãcar un programator dacã
+ºti unul sau douã limbaje de programare, trebuie sã inveþi sã gândeºti problemele de 
+programare la modul general, independent de limbaj. Pentru a fi un hacker adevãrat trebuie sã
+ajungi pânã în punctul în care sã reuºeºti sã înveþi un limbaj nou în câteva zile fãcând 
+asociaþii cu ceea ce ºti deja. Asta înseamnã cã trebuie sã ºti mai multe limbaje diferite.
+</p><p>
+Dupã ce depãºeºti faza iniþialã ºi o sã incepi sã înþelegi principalele concepte trebuie sã
+înveþi C, limbajul pe baza cãruia a fost construit Unix. C++ are foarte multe elemente comune
+cu C, dacã ºti unul va fi uºor sã îl înveþi pe celãlalt. Nici C, nici C++ nu sunt genul de 
+limbaje pe care sã le înveþi prima data. O sã observi cã o sã fi mult mai productiv in alte
+limbaje decât în C.
+</p><p>
+C-ul este foarte eficient, ºi econom cu resursele calculatorului. Din nefericire C-ul are 
+aceasta eficienþã deoarece managementul memoriei ºi a resurselor este lãsat în seama programatorului.
+Tot codul acesta este complex ºi predispus la probleme ( bug-uri ) ºi va consuma foarte mult
+timp. Tinând cont de cât de rapide sunt calculatoarele de astãzi este mai bine sã foloseºti un
+limbaj care sã economiseascã timpul programatorului ºi nu pe cel al calculatorului ( ex:Python ). 
+</p><p>
+Alte limbaje de importanþã deosebitã pentru un hacker sunt 
+<a href="http://www.perl.com" target="_top">Perl</a> ºi 
+<a href="http://www.lisp.org/" target="_top">LISP</a>.
+Perl meritã învãþat în special din motive practice; este folosit foarte frecvent pentru 
+pagini de web dinamice ºi pentru administrarea sistemului, astfel încât chiar dacã nu o scri
+programe în Perl tot trebuie sã ºti sã înþelegi o sursã. Mulþi oameni utilizeazã Perl aºa 
+cum sugerez eu sã fie folosit Python, pentru a evita programarea în C atunci cand nu e nevoie
+de eficienþã. Va trebui sã fi capabil sã înþelegi aceste programe.
+</p><p>
+LISP meritã învãþat pentru sentimentul de mulþumire pe care îl ai atunci cand reuºeºti sã-l
+înþelegi. Aceastã experienþã te va face un programator mai bun pentru tot restul vieþii, chiar
+dacã nu o sã foloseºti LISP pentru a scrie programe. ( Poþi sã capeþi niºte experienþã în LISP
+uºor scriind ºi modificând moduri de editare pentru Emacs, sau Script-Fu plugins pentru GIMP. )
+</p><p>
+Cel mai bine e sã le înveþi pe toate cinci : Pyhton, C/C++, Java, Perl si LISP. În afara
+faptului cã sunt cele mai importante limbaje pentru hacking sunt ºi ipostaze ale diferitelor
+paradigme de programare, ºi fiecare te va educa în diferite moduri.
+</p><p>
+Nu pot sã dau instrucþiuni complete despre cum sã înveþi sã programezi, e o muncã dificilã. Dar
+pot sã îþi spun cã nu te vor ajuta foarte mult carþile ºi cursurile ( mulþi, poate cei mai mulþi
+hackeri sunt autodidacþi ). Pot sã înveþi despre un limbaj din carþi, dar modul de gândire
+care transformã acele cunoºtiinþe într-o deprindere pot fi învãþate numai prin exerciþiu ºi 
+programare. Ceea ce trebuie sã faci e sã (a) <span class="emphasis"><em>citeºti programe</em></span> ºi
+sã <span class="emphasis"><em>scri programe</em></span>.
+</p><p>
+Peter Norving care este unul dintre cei mai buni hackeri de la Google ºi coautor al unor
+excelente cãrþi despre inteligenþã artificialã, a scris un eseu excelent numit 
+<a href="http://www.norvig.com/21-days.html" target="_top">Teach Yourself Programming in
+Ten Years</a>. Reþeta lui pentru succes în programare meritã toatã atenþia. 
+</p><p>
+A învãþa sã programezi e ca ºi cum ai învãþa o nouã limbã. Cea mai bunã modalitate e sã citeºti
+câteva texte scrise de experþi în domeniu, sã scrii niºte chestii singur, sã citeºti mai mult,
+sã mai scri, sã citeºti, sã scri .... ºi sã repeþi pânã când dezvolþi în scris genul de 
+putere ºi economie pe care o vezi în modelele tale.
+</p><p>
+Gãsirea unor programe bune pentru analizat era o chestie dificilã, pentru cã erau puþine 
+disponibile sub formã de cod sursã pe care puteau experimenta hackerii. Acest lucru s-a
+schimbat dramatic; programe cu sursã deschisã ( open-source ), unelte pentru programare ºi
+sisteme de operare ( toate construite de hackeri ) sunt acum disponibile pentru oricine.
+Ceea ce ne apropie de urmãtorul subiect .....
+</p></div><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="skills2"></a>2. Instaleazã ºi foloseºte un sistem de operare din familia Unix.</h3></div></div></div>
+<p>O sã presupun cã ai un calculator personal sau ai acces la unul.
+( Gândeºte-te un moment ce înseamnã asta. Cultura hackerilor a apãrut 
+în timpul în care calculatoarele erau aºa de scumpe încât nici o persoanã
+fizicã nu îºi permitea sã îºi cumpere. ). Unul dintre cei mai importanþi paºi pe care un
+începãtor îl poate face pentru a începe sã dobândeascã deprinderi de hacker este sã facã
+rost de o copie de Linux sau BSD, sã-l instaleze pe calculatorul personal ºi sã înveþe sã-l
+foloseascã. 
+</p><p>
+Da, mai sunt ºi alte sisteme de operare în lume în afarã de Unix. Dar sunt distribuite sub
+formã binarã, nu poþi citi codul, nu-l poþi modifica. A încearca sã înveþi hacking pe un calculator
+cu Microsoft Windows sau orice alt sistem de operare cu surse închise e ca ºi cum ai încerca
+sã dansezi îmbrãcat în gips.
+</p><p>
+Sub Mac OS X este posibil, dar numai o parte din sistemul de operare are ºi surse, e posibil
+sã te loveºti de multe ziduri, ºi trebuie sã fi atent sã nu dezvolþi prostul obicei de a 
+depinde de codul proprietate Apple. Dacã te concentrezi pe Unix poþi învãþa foarte multe lucruri.
+</p><p>
+Unix este sistemul de operare al internetului. Deºi poþi sã înveþi sã foloseºti internetul
+fãrã sã ºti Unix, nu poþi sã fi un hacker fãrã sã înþelegi Unix. Din acest motiv, cultura
+hackerilor este strâns legatã de Unix. ( Acest lucru nu a fost întotdeauna adevãrat, ºi câþiva
+hackeri nu sunt prea bucuroºi, dar simbioza între Unix ºi internet este suficient de puternicã
+încât nici Microsoft nu poate sã intervinã.)
+</p><p>
+Aºa cã instaleazã un sistem din familia Unix ( ªi mie îmi place Linux dar mai existã ºi 
+alte cãi ( ºi da, poþi sã ai ºi Linux ºi Windows pe acelaºi calculator )). Invaþã sã-l folosesti.
+Experimenteazã cu el. Navigheazã pe internet cu el. Citeºte codul. Modificã codul. O sã ai
+la dispoziþie unelte pentru programare : C, LISP, Python ºi Perl, mai mult decât pe orice 
+sistem Microsoft, o sã înveþi mult mai repede decât îþi dai seama. 
+</p><p>
+Pentru mai multe informaþii în legãturã cu Unix vezi 
+<a href="http://catb.org/~esr/faqs/loginataka.html" target="_top">The Loginataka</a>. Aruncã o 
+privire ºi pe <a href="http://catb.org/~esr/writings/taoup/" target="_top">The
+Art Of Unix Programming</a>.
+</p><p>
+Pentru a obþine o copie Linux, viziteazã <a href="http://www.linux.org/" target="_top">Linux Online!</a>;
+poþi sã descarci de acolo sau ( o idee mai bunã ) gaseºte un grup local de utilizatori Linux
+care sã te ajute cu instalarea. Din perspectiva unui nou utilizator toate distribuþiile Linux
+sunt identice. 
+</p><p>
+Poþi sã gasesti informaþii ºi resurse despre BSD Unix la <a href="http://www.bsd.org" target="_top">www.bsd.org</a>.
+</p><p>
+Am scris o scurtã introducere la adresa <a href="http://en.tldp.org/HOWTO/Unix-and-Internet-Fundamentals-HOWTO/index.html" target="_top">Basics
+of Unix and the Internet</a>
+</p><p>
+(Notã : Nu recomand instalarea unui sistem Linux sau BSD singur, mai ales dacã eºti un începãtor.
+Pentru Linux gãseºte un grup de utilizatori ºi cere ajutor.)
+</p></div><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="skills3"></a>3. Învaþã sã foloseºti internetul ºi HTML.</h3></div></div></div>
+<p>
+Cele mai multe lucruri pe care cultura hackerilor le-a produs nu s-au bucurat de atenþie
+publicã, fiind folosite în fabrici ºi universitãþi fãrã nici un impact direct asupra omenilor în
+general. Internetul este marea excepþie, marea ºi strãlucitoarea jucãrie realizatã de hackeri
+care a schimbat lumea. Din acest motiv ( ºi multe altele ) trebuie sã înveþi sã ºti sã 
+lucrezi pe internet. 
+</p><p>
+Asta nu înseamnã doar sã ºti sã foloseºti un browser ( oricine poate sã facã asta ), trebuie
+sã înveþi sã scri HTML - limbajul Web-ului. Dacã nu ºti sã programezi învãþând HTML o sã 
+îþi fie mai uºor sã înveþi apoi un limbaj de programare. Aºa cã trebuie sã îþi faci o paginã pe
+web. Încearcã sã foloseºti standardul XHTML, care e mai aranjat decât clasicul HTML.
+( Se gãsesc uºor tutoriale pe internet; <a href="http://www.make-a-web-site.com/" target="_top">
+aici e unul</a>.)
+</p><p>
+Dar simplu fapt de a avea o pagina e doar începutul lungului drum spre a devenii un hacker. 
+Internetul e plin de astfel de pagini. Majoritatea au un conþinut inutil ( vezi <a href="http://catb.org/~esr/html-hell.html" target="_top">The HTML Hell
+Page</a> ).
+</p><p>
+Ca sã merite, pagina ta va trebui sã aibã conþinut, sã fie interesantã/folositoare altor hackeri.
+ªi asta ne aduce la urmatorul subiect ....
+</p></div><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="skills4"></a>4. Dacã nu ºti englezã la un nivel acceptabil, învaþã.</h3></div></div></div>
+<p>
+Ca american ºi vorbitor nativ de limbã englezã am ezitat sã sugerez acest lucru, l-am perceput
+ca o formã de imperialism cultural. Dar câþiva vorbitori nativi de altã limbã decât engleza
+m-au împins sã declar cã engleza este limba comunitãþii hackerilor ºi cã trebuie sã o ºti
+pentru a te integra.
+</p><p>
+În jurul anului 1991 am învãþat cã mulþi hackeri care stiau engleza o foloseau în special
+în discuþiile tehnice; mi s-a spus cã engleza are un vocabular tehnic mult mai bogat decât
+orice altã limba ºi deci este un instrument mai bun pentru astfel de discuþii. Din motive
+similare traducerile cãrþilor tehnice din englezã sunt deseori nesatisfãcãtoare.
+</p><p>
+Linus Torvalds comenteazã tot codul pe care îl scrie în englezã ( aparent nici nu ºi-a pus
+vreodatã problema dacã ar trebui sã facã altfel ). Engleza lui fluentã a fost un factor 
+important în abilitatea sa de a recruta o comunitate globalã de dezvoltatori Linux. Este un
+exemplu bun de urmat.
+</p><p>
+Fiind un vorbitor nativ de englezã nu garanteazã cã ºtii suficient de mult pentru a fi un 
+hacker. Dacã scrisul este plin de dezacorduri ºi de greºeli, mulþi hackeri ( inclusiv eu )
+vor avea tendinþa sã te ignore. Deºi scrisul dezordonat nu înseamnã neapãrat ºi o gândire
+dezordonatã am observat cã existã totuºi o corelaþie destul de puternicã. Daca nu ºti sã
+scri bine, învaþã.
+</p><div class="mediaobject"><img src="glider.png" /></div></div></div><div class="sect1" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a id="status"></a>Statutul în comunitatea hackerilor</h2></div></div></div><div class="toc"><dl><dt><span class="sect2">
+<a href="#respect1">1. Scrie programe cu surse deschise ( open-source )</a></span></dt><dt><span class="sect2">
+<a href="#respect2">2. Ajutã la testarea ºi îmbunãtãþirea programelor open-source</a></span></dt><dt><span class="sect2">
+<a href="#respect3">3. Publicã informaþii utile</a></span></dt><dt><span class="sect2">
+<a href="#respect4">4. Menþine infrastructura funcþionalã</a></span></dt><dt><span class="sect2">
+<a href="#respect5">5. Ajutã comunitatea hackerilor</a></span></dt></dl></div>
+<p>
+Ca ºi celelalte culturi care nu se bazeazã pe economie, cultura hackerilor se bazeazã pe 
+reputaþie. Tu încerci sã rezolvi probleme interesante, dar cât de interesante sunt, ºi cât
+de bune sunt soluþiile tale rãmâne sã decidã ceilalþi. 
+</p><p>
+Atunci când faci parte din jocul hackerilor scorul tãu e dat în special de ceea ce gândesc
+ceilalþi ( din acest motiv nu te poþi numi hacker pânã în momentul când ceilalþi nu te numesc
+astfel ). Acest fapt este mascat de imaginea hackingului vãzut ca o activitate solitarã; ºi
+de un tabu din cultura hackerilor ( care a început sã disparã din 1990 dar care este încã puternic
+) împotriva admiterii faptului cã aprobarea celorlalti are un rol în motivaþie. 
+</p><p>
+Cultura hackerilor este ceea ce antropologi numesc o culturã a darului. Obþii reputaþie
+ºi eºti respectat, nu fiind frumos, nu având lucruri pe care alþi oameni le vor, ci oferind - timp, 
+creativitate, ºi rezultatul muncii tale.
+</p><p>
+Sunt cinci lucruri pe care le poþi face pentru a fi respectat de ceilalþi hackeri :
+</p><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="respect1"></a>1. Scrie programe cu surse deschise ( open-source )</h3></div></div></div>
+<p>
+Primul lucru ( central ºi tradiþional ) pe care îl poþi face e sã scri programe pe care 
+ceilalþi hackeri sã le considere distractive ºi utile, ºi sã oferi codul sursã al acestor 
+programe astfel încât toþi sã îl poatã folosi.
+</p><p>
+(Iniþial au fost numite gratis ( free ) dar termenul a introdus confuzie pentru cã nu se 
+ºtia exact ce înseamnã gratis. Cei mai mulþi folosesc astãzi termenul de <a href="http://www.opensource.org/" target="_top">open-source</a>).
+</p><p>
+Cei mai respectaþi în cultura hackerilor sunt cei care au scris programe mari ºi capabile,
+care au satisfãcut o nevoie generalã ºi care au fost oferite gratis împreunã cu sursele 
+complete astfel încât oricine sã le poatã folosi ºi învãþa din ele.
+</p><p>
+Dar lucrurile nu au fost mereu aºa. Deºi hackerii au privit dezvoltatorii open-source
+cu multã admiraþie ca un element esenþial al culturii, înainte de 1990 majoritatea 
+hackerilor scriau programe cu sursele închise. Aceastã atitudine era încã activã în
+1996 când am scris prima versiune a acestui document; lucrurile s-au schimbat începând
+cu anul 1997. Astãzi comunitatea hackerilor ºi comunitatea dezvoltatorilor open-source sunt 
+douã denumiri care descriu acelaºi lucru dar e bine sã ºtim cã lucrurile nu au fost mereu aºa.
+
+</p></div><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="respect2"></a>2. Ajutã la testarea ºi îmbunãtãþirea programelor open-source</h3></div></div></div>
+<p>
+ªi cei care gãsesc erorile din programele open-source sunt foarte respectaþi. În aceastã 
+lume imperfectã, inevitabil ajungem sã ne petrecem cel mai mult timp de dezvoltare a 
+programelor cãutând erori. Din acest motiv orice dezvoltator open-source care gândeºte îþi va
+spune cã niºte testeri buni ( care ºtiu cum sã descrie simptomele clar, sã localizeze problemele,
+sã ignore micile probleme din primele apariþii, ºi care pot sã aplice niºte funcþii de 
+diagnosticare ) sunt foarte valoroºi. Chiar ºi unul singur poate sã facã diferenþa între o 
+cãutare de erori care este stresantã ºi una foarte uºoarã.
+</p><p>
+Daca eºti un începãtor, încearcã sã gãseºti un program care este în dezvoltare ºi de care eºti
+interesat ºi fi un bun tester. Are loc un avans natural de la a ajuta la testarea programelor,
+la a ajuta la eliminarea erorilor ºi a ajuta la scrierea lor. O sã înveþi foarte mult astfel
+ºi o sã ai o relaþie bunã cu oameni care te vor ajuta mai târziu.
+</p></div><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="respect3"></a>3. Publicã informaþii utile</h3></div></div></div>
+<p>
+Un alt lucru bun e sã colectezi ºi sã filtrezi informaþii utile ºi interesante în pagini web
+sau documente cu rãspunsuri la întrebãri frecvente ( FAQ - Frequently Asked Questions ) pe 
+care sã le faci disponibile tuturor.
+</p><p>
+Menþinãtorii celor mai importante liste de întrebãri frecvente primesc la fel de mult respect
+ca ºi dezvoltatorii open-source.
+</p></div><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="respect4"></a>4. Ajutã la menþinerea infrastructurii funcþionale</h3></div></div></div>
+<p>
+Cultura hackerilor ( ºi a inginerilor care au dezvoltat internetul ) se bazeazã pe voluntariat.
+E foarte multã muncã necesarã care trebuie fãcutã pentru a menþine lucrurile funcþionale : 
+administrare liste de mail, moderare grupuri de ºtiri, menþinerea unor arhive mari de soft, 
+dezvoltarea de RFC-uri ºi alte standarde tehnice.
+</p><p>
+Oamenii care fac aceste lucruri sunt foarte respectaþi pentru cã toatã lumea ºtie cã aceste
+munci sunt mari devoratoare de timp ºi nu sunt atât de distractive ca programarea. Fãcând 
+aceste lucruri persoanele respective îºi aratã loialitatea.
+</p></div><div class="sect2" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h3 class="title">
+<a id="respect5"></a>5. Ajutã comunitatea hackerilor</h3></div></div></div>
+<p>
+În final, poþi sã ajuþi la propagarea culturii hackerilor în sine ( prin de exemplu scrierea 
+unui eseu despre cum sã devii un hacker :-)). Nu vei putea sã faci acest lucru decât dacã
+vei fi cunoscut de cât mai mulþi oameni pentru unul din primele patru lucruri.
+</p><p>
+Comunitatea hackerilor nu are lideri, dar are eroi, "bãtrâni", istorici ºi purtãtori
+de cuvânt. Când ai fost implicat mai mult timp în comunitate se poate sã ajungi ceva de 
+genul ãsta. Atenþie: hackerii nu au încredere în ego-ul zgomotos al "bãtrânilor" aºa cã poate
+fi periculos sã ai o astfel de faimã. Nu trebuie sã încerci din toate puterile sã te ridici
+la un astfel de nivel, trebuie sã te poziþionezi de aºa naturã încât sã îþi cadã în braþe ºi
+atunci sã fi modest. 
+</p>
+<div class="mediaobject"><img src="glider.png" /></div></div></div><div class="sect1" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a id="nerd_connection"></a>Legãtura Hacker/Tocilar(nerd)</h2></div></div></div>
+<p><i>
+Termenul <b>nerd</b> din englezã nu are o traducere exactã în românã. În limba englezã termenul
+este mult mai nuanþat decât definiþia acceptata în limba românã. O astfel de persoanã nu poate
+fi numitã pur ºi simplu tocilar. Pentru mai multe informaþii vedeþi pagina 
+<a href="http://en.wikipedia.org/wiki/Nerd" target="_blank">http://en.wikipedia.org/wiki/Nerd</a>.
+În continuare în text o sã folosesc termenul din românã, tocilar, dar cu sensul mult mai nuanþat
+ºi apropiat de cel real. O discuþie pe aceastã temã poate fi lungã - ºi într-o oarecare mãsurã 
+asemãnãtoare cu cea despre cum sã devii un hacker.
+</i></p>
+<p>
+Contrar miturilor, nu trebuie sã fi un tocilar ca sã fi un hacker. Ajutã, ºi întradevãr
+majoritatea hackerilor sunt tocilari. Fiind mai puþin sociabil te ajutã sã rãmâi concentrat
+asupra lucrurilor cu adevãrat importante, precum gândirea ºi hackingul.
+</p><p>
+Din acest motiv, mulþi hackeri au adoptat termenul de nerd(tocilar) ºi chiar ºi 
+termenul mai dur geek ca o modalitate de a-ºi declara independenþa faþã de aºteptãrile
+societãþii.
+</p><p>
+Dacã reuºeºti sã te concetrezi pe hacking suficient astfel încât sã fi bun ºi sã ai ºi o
+viaþã socialã, totul e înregulã. Astãzi e mult mai uºor sã faci asta decât era în 1970 când
+eram un începãtor; societatea este mult mai prietenoasã cu astfel de persoane azi. Existã
+un numãr în creºtere de persoane care realizeazã cã hackerii sunt ºi niºte persoane foarte 
+sensibile ºi iubitoare. 
+</p><p>
+Dacã eºti atras de hacking pentru cã nu ai o viaþã socialã ºi asta e ok, cel puþin nu o sã 
+ai probleme sã te concentrezi. Poate o sã ai o viaþã mai târziu.
+</p><div class="mediaobject"><img src="glider.png" /></div></div><div class="sect1" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a id="style"></a>Puncte pentru stil</h2></div></div></div>
+<p>
+Pentru a fi un hacker trebuie sã îþi formezi un mod de gândire specific. Sunt anumite
+lucruri pe care le poþi face atunci când nu eºti la un calculator care par sã ajute. Nu
+existã un substituient pentru hacking ( nimic nu e ) dar mulþi hackeri apeleazã la astfel 
+de activitãþi ºi se simt conectaþi într-un anumit fel cu hackingul.
+</p><a id="do_this"></a><div class="itemizedlist"><ul type="disc"><li>
+<p>Învaþã bine limba materna. Deºi existã un stereotip cã 
+programatorii nu pot scrie, un numãr surprinzãtor de hackeri
+( inclusiv unii dintre cei mai împliniþi pe care îi cunosc )
+sunt foarte buni scriitori. 
+</p></li><li><p>Citeºte cãrti ºtiinþifico-fantastice. Mergi la întâlnirile
+pe teme ºtiinþifico-fantastice( sunt un loc bun unde poþi întâlni alþi hackeri )
+</p></li><li><p>
+Învaþã o formã de arte marþiale. Genul de disciplinã mentalã necesarã pentru arte martiale
+este similarã cu ceea ce fac hackerii. Cele mai populare forme între hackeri sunt Tae Kwon Do,
+diferite forme de Karate, Wing Chun, Aikido, sau Ju Jitsu. Cele mai populare sunt cele
+care pun accentul pe disciplina mentalã, relaxare conºtientã, ºi control în defavoarea
+rezistenþei ºi puterii fizice. 
+</p></li><li><p>
+Studiazã o disciplinã de meditaþie. Cea mai practicatã în acest moment este Zen ( important,
+poate fi practicatã fãrã necesitatea de a crede într-o noua religie sau renunþarea la cea
+pe care o ai deja ). ªi altele pot funcþiona dar trebuie sã fi atent sã nu începi sã crezi
+chestii aiurea. 
+</p></li><li><p>
+Dezvoltãþi simþul muzical. Învaþã sã apreciezi diferite genuri de muzica. Învaþã sã cânþi 
+la un instrument muzical, sau doar sã cânþi. 
+</p></li><li><p> Apreciazã jocurile de cuvinte.	 
+</p></li></ul></div><p>
+Cu cât mai multe lucruri din cele enumerate faci deja, este mai probabil sã fi un hacker natural.
+De ce aceste lucruri nu se poate explica, dar sunt conectate cu o serie de caracteristici
+ale emisferei drepte ºi emisferei stângi care sunt importante; hackerii trebuie sã fie 
+capabili sã gândeascã logic dar ºi sã poatã sã depãºeascã tiparele. 
+</p><p>
+Munceºte la fel de intens cum te joci, joacã-te la fel de intens precum munceºti. 
+Pentru hackerii adevãraþi graniþele dintre "joc", "muncã", "ºtiinþã" ºi "artã" par
+sã disparã ºi sã se uneasca într-un singur concept. Deasemenea nu trebuie sã fi 
+mulþumit cu un anumit set de cunoºtinþe. Deºi majoritatea hackerilor se recomandã 
+ca programatori, este foarte probabil sã fie competenþi ºi în alte domenii : 
+administrare de sistem, web design, ºi depanatori de componente. Un hacker 
+care este administrator de sistem este probabil sã fie foarte bun la programarea
+în limbaje de script ºi web design. Hackerii nu fac lucrurile pe jumãtate : dacã
+învaþã ceva nou au tendinta sã devinã foarte buni.
+
+</p><p><a id="not_to_do"></a>În final, câteva lucrurile care <span class="emphasis"><em>nu</em></span> 
+trebuie fãcute.</p><div class="itemizedlist"><ul type="disc"><li>
+<p> Nu folosi un nick sau un ID grandios sau prostesc.
+</p></li><li><p> Nu participa la jigniri( flame wars ) pe Usenet ( sau oriunde altundeva ).
+</p></li><li><p> Nu te autointitula un vandal electronic( cyberpunk ) ºi nu bãga pe nimeni în seamã care se denumeºte astfel.
+</p></li><li><p> Nu pune mesaje sau trimite mail-uri care sunt pline de erori	 
+</p></li></ul></div><p>
+Nu vei primi decât mustrãri pentru orice fel de astfel de abatere.
+Hackerii au memorie lungã, poate dura ani de zile pentru a fi acceptat. 
+</p><p>
+Problema cu nick-urile meritã sã fie abordatã mai pe larg. Ascunderea identitatii 
+în spatele unui nume fals este o atitudine copilãreascã specificã crackerilor, warez d00dz, 
+ºi altor forme de viaþã inferioare. Hackerii nu fac asta; sunt mândrii de ceea ce fac ºi
+vor ca acþiunilor lor sã fie asociate cu numele lor real. Aºa cã dacã ai un astfel de nick, 
+renunþã la el. În cultura hackerilor nu va face altceva decât sã te marcheze ca un ratat.
+</p><div class="mediaobject"><img src="glider.png" /></div></div><div class="sect1" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a id="resources"></a>Alte resurse</h2></div></div></div>
+<p>Paul Graham a scris un eseu numit <a href="http://www.paulgraham.com/gh.html" target="_top">Great Hackers</a>, ºi
+încã unul numit <a href="http://www.paulgraham.com/college.html" target="_top">Undergraduation</a>,
+în care se gaseºte multã înþelepciune.
+</p><p>Peter Seebach menþine un excelent 
+<a href="http://www.plethora.net/~seebs/faqs/hacker.html" target="_top">Hacker
+FAQ</a> pentru manageri/angajatori care nu ºtiu cum sã trateze un hacker.
+</p><p>Existã un document numit 
+<a href="http://samizdat.mines.edu/howto/HowToBeAProgrammer.html" target="_top">How To Be
+A Programmer</a> care este o excelentã continuare la acesta.
+Conþine sfaturi valoroase nu numai despre programare, dar ºi despre cum sã te comporþi
+într-o echipã de programatori.
+
+</p><p>Am scris ºi 
+<a href="http://catb.org/~esr/writings/hacker-history/hacker-history.html" target="_top"><em class="citetitle">A
+Brief History Of Hackerdom</em></a>.</p><p>Am scris un articol, 
+<a href="http://catb.org/~esr/writings/cathedral-bazaar/index.html" target="_top"><em class="citetitle">The Cathedral
+and the Bazaar</em></a>, 
+care explicã cum funcþioneazã comunitatea Linux ºi comunitatea open-source.
+Am abordat subiectul ºi mai serios în cotinuarea numitã 
+<a href="http://catb.org/~esr/writings/homesteading/" target="_top"><em class="citetitle">Homesteading
+the Noosphere</em></a>.
+</p><p>
+Rick Moen a scris un document excelent despre 
+<a href="http://linuxmafia.com/faq/Linux_PR/newlug.html" target="_top">how to run
+a Linux user group</a>.</p><p>Rick Moen ºi cu mine am colaborat la un alt articol numit 
+<a href="http://catb.org/~esr/faqs/smart-questions.html" target="_top">How
+To Ask Smart Questions</a>( Cum sã pui întrebãri inteligente ).  
+Acesta te va ajuta sã cauþi ajutor într-un fel în care e destul de probabil sã-l primeºti.
+</p><p>
+Dacã ai nevoie de informaþii despre cum merg calculatoarele personale, Unix ºi internetul 
+citeºte <a href="http://en.tldp.org/HOWTO//Unix-and-Internet-Fundamentals-HOWTO/" target="_top">
+The Unix and Internet Fundamentals HOWTO</a>.
+</p><p>
+Atunci când publici programe sau scri patch-uri pentru programe încearcã sã urmezi regulile
+din <a href="http://en.tldp.org/HOWTO/Software-Release-Practice-HOWTO/index.html" target="_top">
+Software Release Practice HOWTO</a>.
+</p><p>
+Dacã þi-a plãcut poemul Zen sigur o sã-þi placã ºi 
+<a href="http://catb.org/~esr//writings/unix-koans" target="_top">Rootless  Root: The Unix Koans of
+Master Foo</a>.
+
+</p><div class="mediaobject"><img src="glider.png" /></div></div><div class="sect1" lang="ro" xml:lang="ro"><div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a id="FAQ"></a>Întrebãri frecvente</h2></div></div></div><div class="qandaset"><dl>
+<dt>Q: <a href="#hacker_already">Cum pot sã îmi dau seama daca sunt deja un hacker?</a></dt>
+<dt>Q: <a href="#teach_hack">O sã mã înveþi cum sã fiu un hacker?</a></dt>
+<dt>Q: <a href="#getting_started">Când pot sã încep?</a></dt>
+<dt>Q: <a href="#when_start">Când trebuie sã începi?  Este prea târziu pentru mine sã învãþ?</a></dt>
+<dt>Q: <a href="#how_long">Cât o sã dureze pânã devin un hacker?</a></dt>
+<dt>Q: <a href="#closed_lang">Sunt Visual Basic sau C# limbaje bune pentru începãtori?</a></dt>
+<dt>Q: <a href="#I_want_to_crack_and_Im_an_idiot">O sã mã înveþi cum sã sparg un sistem, sau cum sã sparg programe?</a></dt>
+<dt>Q: <a href="#passwords">Cum aflu parola unui cont?</a></dt>
+<dt>Q: <a href="#crackmail">Cum pot sã intru/citesc/monitorizez cãsuþa de mail a altcuiva?</a></dt>
+<dt>Q: <a href="#crackop">Cum pot sã fur drepturile de operator pe IRC?</a></dt>
+<dt>Q: <a href="#anti_crack">Am fost atacat. Mã vei ajuta sã rãspund viitoarelor atacuri?</a></dt>
+<dt>Q: <a href="#windows_grief">Am probleme cu programele mele pe Windows.  Ma ajuti?</a></dt>
+<dt>Q: <a href="#real_hackers">Unde pot sã gãsesc niºte hackeri adevãraþi cu care sã vorbesc?</a></dt>
+<dt>Q: <a href="#books">Poti sã îmi recomanzi câteva cãrti utile?</a></dt>
+<dt>Q: <a href="#mathematics">Trebuie sã ºtiu matematicã ca sã devin hacker?</a></dt>
+<dt>Q: <a href="#language_first">Ce limbaj ar trebui sã învãþ prima datã?</a></dt>
+<dt>Q: <a href="#hardware">Ce fel de calculator am nevoie?</a></dt>
+<dt>Q: <a href="#started2">Vreau sã contribui. Poþi sã mã ajuþi sã aleg o problemã la care sã lucrez?</a></dt>
+<dt>Q: <a href="#MS_hater">Trebuie sã urãsc Microsoft?</a></dt>
+<dt>Q: <a href="#no_living">Programele open-source pun programatorii în imposibilitatea de a caºtiga bani?</a></dt>
+<dt>Q: <a href="#problems">Cum încep? Unde gãsesc o versiune de Unix?</a></dt></dl><table border="0" summary="Q and A Set"><col align="left" width="1%" /><tbody><tr class="question"><td align="left" valign="top">
+<a id="hacker_already"></a><a id="id265484"></a><b>Q:</b></td><td align="left" valign="top">
+<p>Cum ºtiu dacã sunt deja un hacker?</p></td></tr><tr class="answer"><td align="left" valign="top">
+<b>A:</b></td><td align="left" valign="top">
+<p>Pune-þi urmãtoarele întrebãri:</p><div class="itemizedlist"><ul type="disc"><li>
+<p>Vorbeºti cod fluent?</p></li><li>
+<p>Te identifici cu scopul ºi valorile comunitãþii hackerilor ?
+</p></li><li>
+<p>Ai fost numit hacker de cãtre un membru recunoscut al comunitãþii?
+</p></li></ul></div><p>
+Dacã poþi rãspunde da la <span class="emphasis"><em>toate cele trei</em></span> 
+întrebãri atunci eºti deja un hacker. Douã nu sunt suficiente.
+</p><p>
+Primul test vizeazã cunoºtinþele. Probabil cã ai rãspuns da dacã ai minimul descris mai sus.
+Treci fãrã probleme dacã ai scris o cantitate apreciabilã de cod pentru un proiect 
+open-source. 
+</p><p>
+A doua întrebare vizeazã atitudinea. Dacã 
+<a href="#attitude" title="The Hacker Attitude">cele cinci principii ale hackerilor</a> ti s-au pãrut
+obiºnuite, asemãnându-se mai mult cu modul cum trãieºti decât cu o poveste, te apropii de un raspuns afirmativ.
+Aceasta e prima jumãtate, cealaltã vrea sã afle cât de mult de identifici cu proiectele pe
+termen lung ale comunitãþii.
+</p><p>
+Aici am enumerat câteva dintre aceste obiective : Conteazã pentru tine dacã Linux devine 
+mai bun ºi mai rãspândit ? Te pasioneazã libertatea programelor ? Eºti ostil monopolurilor ? 
+Acþionezi în credinþa cã trebuie sã vedem calculatoarele ca simple instrumente care fac 
+lumea mai bogatã ºi mai umanã ?
+</p><p>
+Dar trebuie sã punctãm un lucru aici. Comunitatea hackerilor are niºte principii politice
+specifice, în special defensive, în special apãrarea dreptului la libera exprimare. Comunitatea
+se luptã ºi cu legile de proprietate intelectualã care ar face comunitatea open-source ilegalã.
+Unele dintre aceste proiecte pe termen lung sunt reprezentate de organizaþii precum Fundaþia
+Frontierei Electronice ( Electronic Frontier Fundation ). Dar în spatele acestui lucru, cei
+mai mulþi hackeri vãd în încercarea de a sistematiza atitudinea lor un program politic 
+explicit dubios; am învãþat, pe calea ce grea, cã aceste încercãri au efecte negative divizând
+comunitatea. Daca cineva vrea sã te recruteze pentru a participa la un protest în numele 
+atitudinii hackerilor, atunci clar a înþeles greºit. Raspunsul corect este probabil sã 
+<i><span class="quote">Taci ºi aratã-le codul.</span></i>
+</p><p>
+A treia întrebare include o definiþie recursivã. Am observat în secþiunea numitã 
+<a href="#what_is" title="What Is a Hacker?"> Ce este un hacker ? </a> cã a fi un hacker
+þine foarte mult de apartenenþa la o anumita subculturã ºi reþea socialã cu o anumitã istorie.
+În trecut, hackerii erau un grup mult mai disipat decât sunt astãzi.
+Dar importanþa unei reþele sociale a crescut în ultimii 13 ani pe mãsurã ce internetul a 
+facut posibilã menþinerea uºor a legãturii cu ceilalþi hackeri.
+O micã schimbare de comportament este cã în acest deceniu avem propriile tricouri.
+</p><p>
+Sociologii care studiazã reþele precum cea a hackerilor sub sigla generalã de "colegii invizibile"
+au observat cã o caracteristicã a reþelelor de acest gen este cã au aºa numiþi pazitori ale 
+porþilor, membrii cheie cu autoritate socialã care pot sã introducã noii membrii în comunitate.
+Pentru cã termenul de "colegiu invizibil" care defineºte cultura hackerilor este un termen mult
+prea general ºi informal ºi rolul unui astfel de pãzitor al portilor este informal.
+Dar ceea ce fiecare hacker întelege este cã nu orice hacker este un pãzitor al porþilor. Aceste
+persoane au o anumitã vechime ºi un anumit numãr de realizãri înainte sã primeascã acest titlu.
+Cât de mult este greu de precizat, dar fiecare hacker ºtie când vede o astfel de persoanã.
+
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="teach_hack"></a><a id="id265592"></a><b>Q:</b></td>
+<td align="left" valign="top"><p>O sã mã înveþi cum sã fiu un hacker?</p></td></tr><tr class="answer"><td align="left" valign="top">
+<b>A:</b></td><td align="left" valign="top">
+<p>
+Din momentul în care am publicat prima datã aceastã paginã am primit nenumãrate cereri 
+( deseori câteva pe zi ) de la persoane care îmi cereau sã le învãþ tot ce trebuie sã ºtie
+pentru a fi un hacker. Din nefericire, nu am timpul ºi energia sã fac acest lucru; propriile
+mele proiecte, ºi munca în rolul partizan al comunitatii open-source îmi ocupa 110% din timp. 
+</p><p>
+Chiar dacã aº fi avut acest timp la dispoziþie, a fi un hacker înseamnã a avea o anumitã 
+atitudine ºi un set mare de cunoºtiinþe pe care trebuie sã le dobândeºti singur. O sã 
+observi cã chiar dacã hackerii adevãraþi vor sã te ajute nu o sã te respecte dacã îi implori
+sã îþi spunã tot ce ºtiu.
+</p><p>
+Învaþã câteva lucruri mai întâi. Aratã cã încerci, cã eºti capabil sã înveþi singur. Apoi
+apeleazã la alti hackeri cu întrebãri precise. 
+</p><p>
+Dacã îi scri unui hacker niºte întrebãri, sunt douã lucruri pe care trebuie sã le ºti. În
+primul rând am observat cã persoanele care sunt leneºe ºi neatente în scris sunt de cele mai
+mult ori neatente ºi leneºe ºi în gândire, neavând capacitatea de a devenii hackeri buni, aºa
+cã ai grijã sã scri corect, sã foloseºti gramatica ºi semnele de punctuaþie, altfel vei fi 
+ignorat. În al doilea rând nu cere ca mesajul sã fie trimis la o cãsuþã de mail diferitã de
+cea de pe care ai trimis mesajul; am aflat cã persoanele care fac acest lucru sunt deobicei
+hoþi care folosesc conturi furate, ºi nu avem nici un interes în a rasplãti sau ajuta hoþi.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="getting_started"></a><a id="id265635"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>Cum pot sã încep ?</p></td></tr><tr class="answer"><td align="left" valign="top">
+<b>A:</b></td><td align="left" valign="top">
+<p>
+Cea mai bunã modalitate sã incepi este sã mergi la o intâlnire a unui grup de utilizatori Linux ( LUG ).
+Poþi sã gaseºti astfel de grupuri pe
+<a href="http://www.tldp.org/links/index.html" target="_top">LDP General Linux
+Information Page</a>; probabil cã existã unul aproape de tine, asociat cu o universitate sau
+un colegiu. Membrii acestei comunitãþi îþi vor da o copie Linux ºi te vor ajuta sã îl instalezi
+ºi sã începi sã înveþi.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="when_start"></a><a id="id265664"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>Când trebuie sã încep?  Este prea târziu pentru mine sã învãþ?</p></td></tr><tr class="answer"><td align="left" valign="top">
+<b>A:</b></td><td align="left" valign="top"><p>
+Orice varstã la care eºti motivat este bunã. Mulþi oameni devin interesaþi între 15 ºi 20 
+de ani, dar cunosc excepþii în ambele direcþii. 
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="how_long"></a><a id="id265685"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>Cât va dura sã învãþ sã devin un hacker?</p></td></tr><tr class="answer"><td align="left" valign="top">
+<b>A:</b></td><td align="left" valign="top">
+<p>
+Asta depinde de cât de talentat eºti ºi cât de mult eºti dispus sã munceºti. Majoritatea
+oamenilor pot sã înveþe un volum respectabil de informaþii în 18 luni panã la 2 ani, dacã 
+se concetreazã. Nu te gândi cã se terminã aici; dacã eºti un hacker adevãrat o sã îþi 
+petreci restul vietii învãþând ºi perfecþionându-þi cunoºtinþele.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="closed_lang"></a><a id="id265708"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>Sunt Visual Basic sau C# limbaje bune pentru începãtori?</p></td></tr><tr class="answer"><td align="left" valign="top">
+<b>A:</b></td><td align="left" valign="top">
+<p>
+Dacã pui aceastã întrebare în mod sigur te gândeºti sã înveþi sã fi un hacker folosind
+un sistem Microsoft Windows. Aceasta este o idee proastã în sine. Când am comparat 
+încercarea de a învãþa sã fi un hacker pe Windows cu a învãþa sã dansezi îmbrãcat în gips, 
+nu glumeam. Nu încerca asta. E urât ºi nu va înceta sã fie urât.
+</p><p>
+Sunt probleme specifice cu Visual Basic ºi C#; în principal din cauza faptului cã nu sunt
+portabile. Deºi existã implementãri open-source ale acestor limbaje, standardele implementate
+nu acoperã decât o micã parte din interfaþa de programare. În Windows majoritatea librãriilor
+sunt proprietatea unui singur producãtor ( Microsoft ); daca nu eºti extrem de atent la ce
+fel de facilitãþi foloseºti, mult mai atent decât poate fi un începãtor o sã ajungi sã fi
+blocat, softul fiind portabil doar pe platformele pe care Microsoft decide sã le suporte. 
+Dacã începi pe Unix, sunt disponibile limbaje mult mai bune. De exemplu, Python.
+</p><p>
+Visual Basic este groaznic. Ca orice alt Basic este slab gândit ºi nu te învaþã decât
+obiceiuri proaste de programare. Nu mã ruga sã le explic în detaliu, aceastã explicaþie
+ar umple singurã o carte. Învaþã un limbaj bine realizat. 
+</p><p>
+Unul dintre aceste obiceiuri proaste este sã devii dependent de librãriile ºi uneltele de 
+dezvoltare ale unui singur producãtor. În general orice limbaj care nu este suportat mãcar
+sub una dintre platformele Linux sau BSD, ºi/sau mãcar de trei producãtori diferiþi de 
+sisteme de operare, este un limbaj slab în care sã înveþi.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="I_want_to_crack_and_Im_an_idiot"></a><a id="id265759"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>O sã mã ajuþi sã sparg un sistem, sau sã mã înveþi cum sã sparg programe?</p></td></tr><tr class="answer"><td align="left" valign="top">
+<b>A:</b></td><td align="left" valign="top">
+<p>
+Nu. Orice persoanã care pune o astfel de întrebare dupã ce a citit acest set de întrebãri
+frecvente este prea proastã pentru a fi educatã chiar dacã aº avea timpul necesar. Orice
+fel de întrebãri pe email legate de acest subiect vor fi ignorate sau vor primi un rãspuns
+brutal.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="passwords"></a><a id="id265781"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>Cum pot sã obþin parola contului altei persoane?</p></td></tr><tr class="answer"><td align="left" valign="top">
+<b>A:</b></td><td align="left" valign="top">
+<p>Acesta este cracking. Dispari idiotule.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="crackmail"></a><a id="id265801"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>Cum pot sã sparg/citesc/monitorizez casuþa de mail a altcuiva ?
+</p></td></tr><tr class="answer"><td align="left" valign="top"><b>A:</b></td><td align="left" valign="top">
+<p>Acesta este cracking. Pa.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="crackop"></a><a id="id265821"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>Cum pot sã fur drepturi de operator pe un canal de IRC?
+</p></td></tr><tr class="answer"><td align="left" valign="top"><b>A:</b></td><td align="left" valign="top">
+<p>
+Acesta este cracking. Dispari.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="anti_crack"></a><a id="id265841"></a>
+<b>Q:</b></td>
+<td align="left" valign="top"><p>
+Am fost crackuit. O sã mã ajuþi sã mã apar de atacuri viitoare ?
+</p></td></tr><tr class="answer"><td align="left" valign="top">
+<b>A:</b></td><td align="left" valign="top">
+<p>
+Nu. De fiecare datã când am fost întrebat acest lucru, întrebarea venea de la o persoanã
+care rula Microsoft Windows. Nu este posibil sã securizezi Windows împotriva atacurilor;
+codul ºi arhitectura au pur ºi simplu prea multe probleme, ceea ce face securizare Windows
+o misiune imposibila. Singura rezolvare este sã treci la Linux sau la alt sistem de operare
+mai bun care sã fie capabil de securitate.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="windows_grief"></a><a id="id265865"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>Am probleme cu sistemul meu de operare Windows. Mã ajuþi ? 
+</p></td></tr><tr class="answer"><td align="left" valign="top"><b>A:</b></td><td align="left" valign="top">
+<p>
+Da. Deschide consola DOS ºi tasteazã "format c:". Orice problemã ai întâlnit va înceta sã 
+mai existe în câteva minute.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="real_hackers"></a><a id="id265887"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>
+Unde pot gãsi niºte hackeri cu care sã vorbesc?
+</p></td></tr><tr class="answer"><td align="left" valign="top"><b>A:</b></td><td align="left" valign="top">
+<p>
+Cel mai bun mod este sã gãseºti un grup local de utilizatori Linux sau Unix ºi sã mergi
+la întâlnirile lor ( poþi sã gãseºti câteva adrese de grupuri la <a href="http://www.tldp.org" target="_top">LDP</a> )\
+</p><p>
+(Obiºnuiam sã spun cã nu o sã gãseºti nici un hacker adevãrat pe IRC, dar am început sã 
+înþeleg cã acest lucru se schimbã. Aparent niºte comunitãþi serioase de hackeri, ataºate proiectelor
+precum GIMP ºi Perl, au canale pentru IRC acum ).
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="books"></a><a id="id265919"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>
+Poþi sã îmi recomanzi câteva cãrti utile despre subiecte legate de hacking ? 
+</p></td></tr><tr class="answer"><td align="left" valign="top"><b>A:</b></td><td align="left" valign="top">
+<p>Menþin o listã 
+<a href="http://en.tldp.org/HOWTO/Reading-List-HOWTO/index.html" target="_top">
+Linux Reading List HOWTO</a> care îþi poate fi utilã. 
+<a href="loginataka.html" target="_top">Loginataka</a> 
+poate fi interesantã. </p><p>
+Pentru o introducere în Python vezi 
+<a href="http://www.python.org/doc/Intros.html" target="_top">materiale
+introductive</a> pe site-ul Python.</p></td></tr><tr class="question"><td align="left" valign="top"><a id="mathematics"></a><a id="id265961"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>
+Trebuie sã fiu bun la matematicã pentru a deveni un hacker?
+</p></td></tr><tr class="answer"><td align="left" valign="top"><b>A:</b></td><td align="left" valign="top">
+<p>
+Nu. Hackingul foloseºte foarte puþinã matematicã formala ºi aritmenticã. 
+În particular nu o sã-ti trebuiascã trigonometrie, calcul sau analizã ( excepþia la acest
+lucru o face grafica 3D ). E bine sã ºti ceva logicã ºi algebrã booleanã. Cunoºtiinþe de
+bazã în teoria seturilor finite, combinatoricã ºi teoria grafurilor se pot dovedi utile.
+</p><p>
+E mult mai important sã fi capabil sã gandeºti logic ºi sã urmezi un lanþ de raþionamente
+logice, aºa cum fac matematicienii. Deºi conþinutul matematic nu te va ajuta foarte mult, vei
+avea nevoie de disciplina ºi inteligenþa matematicã. Dacã nu eºti prea inteligent nu sunt prea
+multe speranþe pentru tine ca hacker; dacã îþi lipseºte disciplina ar fi bine sã o dezvolþi.
+</p><p>
+Cred cã o bunã modalitate de a afla dacã ai ceea ce îþi trebuie e sã gaseºti o copie 
+a carþii lui Raymond Smullyan's <em class="citetitle">What Is The Name Of
+This Book?</em>. Logica pe care o promoveazã în carte este în spiritul hackerilor. Dacã
+eºti capabil sã rezolvi problemele puse acolo e un semn bun; dacã îþi place sã le rezolvi e 
+un semn ºi mai bun.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="language_first"></a><a id="id266004"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>
+Ce limbaj ar trebui sã învãþ prima datã ? 
+</p></td></tr><tr class="answer"><td align="left" valign="top">
+<b>A:</b></td><td align="left" valign="top">
+<p>
+XHTML ( ultimul dialect de  HTML ) dacã nu îl cunoºti deja. Sunt foarte multe carþi 
+pe aceastã temã, dar puþine bune. Cea care îmi place cel mai mult este 
+<a href="http://www.oreilly.com/catalog/html5/" target="_top"><em class="citetitle">HTML: The
+Definitive Guide</em></a>.
+</p><p>
+Dar HTML nu poate fi considerat un limbaj de programare. Când eºti gata sã începi sã programezi,
+îþi recomand sã începi cu 
+<a href="http://www.python.org" target="_top">Python</a>.
+O sã auzi foarte multã lume care recomandã Perl, ºi Perl este încã mult mai popular decât
+Python, dar este mai dificil de învãþat ºi ceva mai puþin bine gândit.
+</p><p>
+C este foarte important, dar este ºi mult mai dificil decât Python ºi Perl. Nu încerca sã-l
+înveþi ca primul limbaj.
+</p><p>
+Ca utilizator Windows nu trebuie sã te axezi pe Visual Basic. O sã te înveþe obiceiuri
+proaste, ºi nu este portabil. Evitã-l.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="hardware"></a><a id="id266059"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>
+De ce fel de calculator am nevoie?
+</p></td></tr><tr class="answer"><td align="left" valign="top">
+<b>A:</b></td><td align="left" valign="top">
+<p>
+În trecut calculatoarele erau destul de slabe încât impuneau limite artificiale hackerilor.
+Acest lucru nu mai este valabil începand cu mijlocul anului 1990; orice calculator mai bun
+decât un Intel 486DX50 va avea suficientã putere pentru dezvoltare, graficã, ºi comunicaþii
+internet, ºi cele mai mici discuri pe care le poþi cumpãra astãzi oferã spatiu de stocare
+suficient.
+</p><p>
+Cel mai important lucru în alegerea unui calculator este compatibilitatea Linux ( sau BSD dacã
+decizi sã urmezi acest drum). Acest lucru este valabil pentru majoritatea calculatoarelor noi.
+Singura parte problematica o reprezintã modemurile; unele calculatoare au componente specifice
+Windows care nu vor funcþiona sub Linux. 
+</p><p>
+Raspunsuri la întrebãri frecvente legate de compatbilitate gasiti 
+<a href="http://en.tldp.org/HOWTO/Hardware-HOWTO/index.html" target="_top">
+aici</a>.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="started2"></a><a id="id266101"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>
+Vreau sã contribui. Poþi sã mã ajuþi sã aleg o problemã la care sã lucrez?
+</p></td></tr><tr class="answer"><td align="left" valign="top"><b>A:</b></td><td align="left" valign="top">
+<p>
+Nu, pentru cã nu ºtiu care sunt talentele ºi interesele tale. Trebuie sã fi automotivat, din
+aceastã cauzã proiectele alese de alþi oameni aproape niciodatã nu reuºesc. 
+</p><p>
+Încearcã astfel. Priveºte anunþurile de proiecte pentru câteva zile la adresa 
+<a href="http://freshmeat.net" target="_top">Freshmeat</a>.
+Când vezi unul care te face sã zici "Super! Aº vrea sã lucrez la acest proiect!", înscrie-te.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="MS_hater"></a><a id="id266132"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>
+Trebuie sã urãsc Microsoft?
+</p></td></tr><tr class="answer"><td align="left" valign="top"><b>A:</b></td><td align="left" valign="top">
+<p>
+Nu, nu trebuie. Nu pentru cã nu ar merita, ci pentru cã a existat o culturã a hackerilor 
+cu mult înainte de Microsoft ºi va mai exista una ºi dupã ce Microsoft va fi istorie.
+Energia pe care o consumi urând Microsoft poate fi folositã mai util pentru a-þi îmbunãtãþii
+capacitãþile. Scrie programe bune care sã discrediteze Microsoft fãrã a-þi polua karma.
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="no_living"></a><a id="id266155"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>
+Programele open-source pun programatorii în imposibilitatea de a câºtiga bani? 
+</p></td></tr><tr class="answer"><td align="left" valign="top"><b>A:</b></td><td align="left" valign="top">
+<p>
+Acest lucru pare improbabil pentru moment, industria de programe open-source a creat locuri
+de muncã noi. Dacã a avea un program scris reprezintã un câºtig economic faþã de faptul 
+de a nu-l avea, programatorul va fi plãtit indiferent dacã programul va fi open-source dupã
+ce este gata. ªi nu conteazã cât de multe programe gratis sunt scrise, mereu va exista cerere
+pentru noi aplicaþii. Am scris mai multe despre acest subiect pe paginile 
+<a href="http://www.opensource.org" target="_top">Open Source</a>
+</p></td></tr><tr class="question"><td align="left" valign="top"><a id="problems"></a><a id="id266185"></a>
+<b>Q:</b></td><td align="left" valign="top">
+<p>
+Cum încep ? Unde gãsesc o veriune gratis de Unix?
+</p></td></tr><tr class="answer"><td align="left" valign="top"><b>A:</b></td><td align="left" valign="top">
+<p>
+Dacã încerci sã gaseºti un prim proiect pe care sã-l faci nu mã întreba pe mine. 
+În schimb urmareºte proiectele de pe 
+<a href="http://www.freshmeat.net" target="_top">Freshmeat</a> unde e posibil
+sã gãseºti ceva interesant la care sã poti sã contribui.
+</p><p>
+Dacã nu ai instalat un sistem Unix pe calculator încã, în aceastã paginã gãseºti legãturi
+cãtre locuri unde sã gãseºti cele mai populare versiuni de Unix. Pentru a fi un hacker
+îþi trebuie iniþiativã ºi abilitatea de a te educa singur. Incepe acum ......
+</p>
+<p>
+<i>
+Tradus de Savu Andrei - 21 ianuarie 2006. Mai multe despre mine  
+<a href="http://www.andreisavu.ro/">aici</a>.</i>
+</p>
+</td></tr></tbody></table></div><div class="mediaobject"><img src="glider.png" /></div></div></div></body></html>
