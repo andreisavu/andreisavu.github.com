@@ -52,9 +52,46 @@ I'm an <b>entrepreneur</b> and a <b>software engineer</b> with a passion for <b>
                 <p class="large" style="line-height: 1.7em">data structures &amp; algorithms, distributed systems, automatic functional and unit testing, automatic deployment, relational and non-relational databases, python, java, django, tornado, debian linux server administration</p>
                 <hr />
             </div>
+  <div id="livestream">
+  <h2>social stream</h2>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 10,
+  interval: 6000,
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#adadad',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#000000',
+      links: '#1c5c00'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: false,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('andreisavu').start();
+</script>
+  <br /><br />
+  <hr />
+  </div>
+
 
 	<div id="past-work">
-		<h2>past work</h2>
+	<h2>past work</h2>
 
                 <h3><a href="http://www.apache.org">@asf</a></h3>
                 <p class="large" style="line-height: 1.7em">Contributing to <a href="http://hadoop.apache.org/zookeeper/">Apache ZooKeeper</a>, a centralized service for maintaining configuration information, naming, providing distributed synchronization and group services.</p>
