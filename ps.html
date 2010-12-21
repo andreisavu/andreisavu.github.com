@@ -8,7 +8,7 @@ function generate() {
   
   master = do_sha256(master);
   pass = do_md5(service + master);
-  pass = pass.substring(0, 6) + '%' + pass.substring(7, 14) + "#" + pass.substring(15);
+  pass = service.toUpperCase().charAt(0) + pass.substring(1, 3) + '%' + pass.substring(4, 6) + "#" + pass.substring(7, 12);
   
   document.form.password.value = pass;
   document.form.password.focus();

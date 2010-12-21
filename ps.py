@@ -12,7 +12,7 @@ def main():
   master = sha256(master).hexdigest()
   passwd = md5(service + master).hexdigest()
 
-  passwd = passwd[0:6] + '%' + passwd[7:14] + '#' + passwd[15:]
+  passwd = service.upper()[0] + passwd[1:3] + '%' + passwd[4:6] + '#' + passwd[7:12]
 
   print passwd
 
