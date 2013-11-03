@@ -26,15 +26,15 @@ body{font-family:Georgia !important} form fieldset{padding:40px;width:420px;marg
 <form action="#" onsubmit="return generate();" name="form" method="post">
 <fieldset>
   <label>Service</label>
-  <input type="text" name="service" />
+  <input type="password" name="service" />
   
   <label>Master</label>
   <input type="password" name="master" />
   
   <label>Password</label>
-  <input type="text" name="password" readonly="1" onfocus="generate();"/>
+  <input type="text" name="password" style="width: 51px" readonly="1" onfocus="generate();"/>
   
-  <button type="submit">Generate</button>
+  <button type="submit" style="clear: left">Generate</button>
 </fieldset>
 </form>
 <script type="text/javascript">
