@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/andreisavu
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://andreisavu.ro
+  * I am andreisavu (https://keybase.io/andreisavu) on keybase.
+  * I have a public key ASDp1eRGPivSk_s7zaaLxykntqlmIZ8VEybGQmZGpg5_pwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120e9d5e4463e2bd293fb3bcda68bc72927b6a966219f151326c6426646a60e7fa70a",
+            "host": "keybase.io",
+            "kid": "0120e9d5e4463e2bd293fb3bcda68bc72927b6a966219f151326c6426646a60e7fa70a",
+            "uid": "a75731778ffc7bb5123bae6d27984119",
+            "username": "andreisavu"
+        },
+        "service": {
+            "hostname": "andreisavu.ro",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.17"
+    },
+    "ctime": 1473705100,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1473705082,
+        "hash": "86d5b238e0836cf27103b566bba89ab38246039b18a0a3234ce2d001f58db61ca07fcadc96821b21627515b47dcc1dc7afa72c077b9fa42d1851203dd8de3bae",
+        "seqno": 631541
+    },
+    "prev": "691fc7e1bf5e14727d0259c9aa4d9bcdd093b1eafb936408e19b16b350492fe7",
+    "seqno": 22,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg6dXkRj4r0pP7O82mi8cpJ7apZiGfFRMmxkJmRqYOf6cKp3BheWxvYWTFAvd7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZTlkNWU0NDYzZTJiZDI5M2ZiM2JjZGE2OGJjNzI5MjdiNmE5NjYyMTlmMTUxMzI2YzY0MjY2NDZhNjBlN2ZhNzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZTlkNWU0NDYzZTJiZDI5M2ZiM2JjZGE2OGJjNzI5MjdiNmE5NjYyMTlmMTUxMzI2YzY0MjY2NDZhNjBlN2ZhNzBhIiwidWlkIjoiYTc1NzMxNzc4ZmZjN2JiNTEyM2JhZTZkMjc5ODQxMTkiLCJ1c2VybmFtZSI6ImFuZHJlaXNhdnUifSwic2VydmljZSI6eyJob3N0bmFtZSI6ImFuZHJlaXNhdnUucm8iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE3In0sImN0aW1lIjoxNDczNzA1MTAwLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NzM3MDUwODIsImhhc2giOiI4NmQ1YjIzOGUwODM2Y2YyNzEwM2I1NjZiYmE4OWFiMzgyNDYwMzliMThhMGEzMjM0Y2UyZDAwMWY1OGRiNjFjYTA3ZmNhZGM5NjgyMWIyMTYyNzUxNWI0N2RjYzFkYzdhZmE3MmMwNzdiOWZhNDJkMTg1MTIwM2RkOGRlM2JhZSIsInNlcW5vIjo2MzE1NDF9LCJwcmV2IjoiNjkxZmM3ZTFiZjVlMTQ3MjdkMDI1OWM5YWE0ZDliY2RkMDkzYjFlYWZiOTM2NDA4ZTE5YjE2YjM1MDQ5MmZlNyIsInNlcW5vIjoyMiwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEDGW+NX0Iv+BtSEyI5nDMRhh/AxK15nKXFqnBTA1LYsx2X47TfnKzaNmHgaGBbf9tqPeLUbfYYvAVJXpMOv0dMMqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgXaamA551ODys/IlAHqmCxmKPf5kPmrtT97XlNp1LsA6jdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/andreisavu
+
+==================================================================
